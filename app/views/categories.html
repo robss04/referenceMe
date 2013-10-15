@@ -1,0 +1,20 @@
+<div class = "subject">
+
+<h1>{{selectedTagThroughRoute}}</h1>
+
+<!-- <a href="{{x.url}}" data-ng-repeat="x in hipchatLinks | filter: selection">{{x.url}} 
+	<span ng-show=" ! $last "><br></span>
+</a>
+ -->
+
+<div style="margin-bottom: 1px;" ng-repeat="link in hipchatLinks | filter: selectedTagThroughRoute">
+  <!--<h3 style= "margin-bottom: 10px">{{ link.name }} posted</h3>-->
+  <a href="{{ link.url }}" target="_blank">{{link.url}}</a>
+  <!--<p style="text-align: right">on {{link.date | date: 'd MMM, y @ h:mm a'}}</p>-->
+  </div>
+
+</div>
+
+
+
+

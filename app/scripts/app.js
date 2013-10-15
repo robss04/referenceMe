@@ -7,7 +7,13 @@ angular.module('referenceMeApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/categories/:selectedTagInUrl', {
+        templateUrl: 'views/categories.html',
+        controller: 'CategoriesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
   });
+
+

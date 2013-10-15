@@ -1,9 +1,16 @@
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+  <h1>referenceMe</h1>
+
+
+<div data-ng-repeat="tag in tags">
+<a href="/#/categories/{{tag}}"><button>{{tag}}</button></a>
+</div>
+
+<!-- <ul>
+  <li><a href= "/#/categories">JavaScript</a></li>
+  <li><a href= "/#/categories">AngularJS</a></li>
+  <li><a href="/#/categories">HTML</a></li>
+  <li><button>CSS</button></li>
+</ul> -->
+
 </div>
